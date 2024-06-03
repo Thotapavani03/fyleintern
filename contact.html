@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        .contact-form h5 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            border-radius: 0;
+            box-shadow: none;
+            border: 1px solid #cccccc;
+        }
+        .form-control:focus {
+            border-color: #FF3366;
+            box-shadow: none;
+        }
+        .btn-primary {
+            background-color: #FF3366;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #cc284f;
+        }
+        .checkbox {
+            margin-top: 20px;
+        }
+        .checkbox label {
+            font-size: 14px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h5>Talk to us</h5>
+        <form action="https://getform.io/f/pbnvglxb" method="POST">
+            <div class="form-group">
+                <label for="email">Work email*</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Work email*">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First name*</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required placeholder="First name*">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last name*</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required placeholder="Last name*">
+                </div>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Contact Us</button>
+        </form>
+    </div>
+</body>
+</html>
